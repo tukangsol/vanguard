@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#05080c">
+<title>STEEL VANGUARD — Taktik Mecha</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud" class="hidden">
+  <div id="topbar">
+    <div class="tb-left"><span class="tb-code" id="tbCode"></span><span class="tb-name" id="tbName"></span></div>
+    <div class="tb-mid" id="tbTurn"></div>
+    <div class="tb-right">
+      <button id="btnCancel" class="btn sm hidden">✕<span class="lg"> BATAL</span></button>
+      <button id="btnNext" class="btn sm" title="Unit berikutnya (Tab)">UNIT ▸</button>
+      <button id="btnRotL" class="btn sm" title="Putar kamera (Q)">⟲</button>
+      <button id="btnRotR" class="btn sm" title="Putar kamera (E)">⟳</button>
+      <button id="btnLink" class="btn sm">LINK ON</button>
+      <button id="btnEnd" class="btn sm warn">AKHIRI<span class="lg"> GILIRAN</span></button>
+      <button id="btnMenu" class="btn sm">☰<span class="lg"> MENU</span></button>
+    </div>
+  </div>
+  <div id="hint"></div>
+  <div id="tileInfo"></div>
+  <div id="unitPanel" class="panel upanel left hidden"></div>
+  <div id="targetPanel" class="panel upanel right hidden"></div>
+  <div id="actionMenu" class="panel hidden"></div>
+  <div id="preview" class="panel hidden"></div>
+</div>
+
+<div id="banner" class="hidden"><div class="bn-stripe"></div><div class="bn-text"></div><div class="bn-sub"></div></div>
+<canvas id="cine" class="hidden"></canvas>
+<div id="screen"></div>
+<div id="modal" class="hidden"></div>
+<div id="toast"></div>
+
+<script src="js/util.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/data.js"></script>
+<script src="js/map.js"></script>
+<script src="js/mech.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/render.js"></script>
+<script src="js/combat.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/cine.js"></script>
+<script src="js/hud.js"></script>
+<script src="js/battle.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
